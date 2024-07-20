@@ -1,0 +1,160 @@
+
+/* 
+    Se encontrara el css de todo el diseño del apartado inicio del aplicativo helppaws 
+*/
+
+/*
+    menu de inico 
+*/
+
+.nav__header{
+    color: var(--color-primario);
+    font-family: var(--tipo-texto);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    max-width: 980px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+/* meni de inicio  Logo */
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 600; 
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.nav__logo:hover{
+    filter: brightness(130%);
+}
+
+.nav__logo__name{
+    width: 180px;
+    height: 36px;
+}
+
+
+/* Lista de menú de navegación */
+
+.nav__ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 30px;
+    position: relative;
+}
+
+.nav__ul li{
+    padding: 0 15px;
+
+}
+
+.nav__ul ul, ol{
+    list-style: none;
+    min-width: 140px;
+}
+
+.nav__ul li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    margin-left: -55px;
+    padding: auto;
+}
+
+.nav__li a:hover {
+    cursor: pointer;
+}
+
+.nav__li a {
+    text-decoration: none;
+    color: var(--color-texto);
+
+}
+
+
+.nav__ul a.selected::after,
+.nav__ul a:hover::after {
+    opacity: 0.8;
+}
+
+.nav__ul a:hover {
+    color: var(--primary-color);
+}
+
+/* Contenido de presentación Helppaws */
+
+.inicio__helppaws__section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px;
+    align-items: center;
+}
+
+.inicio__helppaws__informacion{
+    max-width: 450px;
+    
+}
+
+.inicio__helppaws__titulo{
+    font-size: 60px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--tipo-texto);
+}
+
+.inicio__helppaws__parrafo{
+    font-size: 25px;
+    margin: 20px;
+    font-family: var(--tipo-texto);
+}
+
+.inicio__helppaws_boton__contenedor{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.inicio__helppaws_boton{
+    background-color: var(--color-secundario);
+    color: var(--color-texto-inverso);
+    border: none;
+    font-size: 20px;
+    padding: 0.5em 1em;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    width: auto;
+}
+.inicio__helppaws_boton:hover{
+    filter: brightness(130%);
+}
+
+.inicio__helppaws__logo{
+    width: 400px;
+}
+
+
+/*
+    apartado de footer 
+*/
+
+.footer__Helppaws{
+    text-align: center;
+}
+
+
