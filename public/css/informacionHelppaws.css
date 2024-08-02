@@ -1,0 +1,184 @@
+.header__informacion{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.header__informacion__container{
+    display: block;
+}
+
+.header__informacion__logo{
+    width: 250px;
+    display: block;
+    padding-left: 25px;
+}
+
+.header__informacion__logoNombre{
+    width: 300px;
+    height: 60px;
+}
+
+/* primer section */
+
+.main__informacion{
+    display: block;
+    font-family: var(--tipo-texto);
+    color: var(--color-texto);
+    line-height: 2rem;
+    font-weight: 400;
+ 
+}
+
+.main__informacion__creacion{
+    max-width: 980px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto ;
+    margin-right: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.main__informacion__imagenfondoDos{
+    width: 420px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    padding-left: auto;
+    opacity: 40%;
+}
+
+.main__informacion__informacion{
+    font-size: 20px;
+    display: block;
+    position: relative;
+    padding: 60px;
+}
+
+/* tercer section */
+
+.main__informacion__empresa{
+    display: flex;
+    flex-direction: column;
+}
+
+.wave {
+    width: 100%; 
+    position: relative;
+    top: 2px;
+}
+
+
+.main__informacion__empresa_container{
+    background-color: var(--color-secundario);
+    color: var(--color-texto-inverso);
+    font-family: var(--tipo-texto);
+}
+
+
+.mapa__estrategico{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.informacion__titulo{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-texto-inverso-dos);
+}
+
+.informacion__parrafo{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.section__informacion{
+    padding: 0;
+}
+
+.main__informacion__empresa__grip{
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.section__informacion__left{
+    text-align: right;
+}
+
+.linea{
+    background-color: var(--color-texto-inverso);
+    position: relative;
+    
+}
+
+.linea::before,
+.linea::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-texto-inverso);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left: -9px;
+}
+
+.linea::after{
+    top: 100%;
+    z-index: 1;
+}
+
+/*tercer section*/
+
+.main__contenido__final{
+    display:block;
+}
+
+.main__img__final__grupoPerros{
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+
+.main__contenido__final{
+    display: block;
+}
+
+.main__contenido__final__titulo{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding-bottom: 30px;
+}
+
+.video{
+    display: block;
+    margin: auto;
+    padding-bottom: 60px;
+
+}
+
+
+.wave-inverso {
+    transform: scaleY(-1);
+    top: -2px;
+}
+
+#footerInicio{
+    padding-bottom: 20px;
+}
+

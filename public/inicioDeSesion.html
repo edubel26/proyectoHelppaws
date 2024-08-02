@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iniciosesion.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="../public/assets/codigoReutilizable/js/navInicio.js"></script>
+    <script src="../public/assets/codigoReutilizable/js/footerInicio.js"></script>
+</head>
+<body>
+
+    <div id="loader" class="loader">
+        <div class="loader__contenedor">
+            <img class="loader__logo" src="/public/assets/img/logo.png" alt="loader logo">
+            <img class="loader__logo__nombre" src="/public/assets/img/nombre.png" alt="loader logo nombre">
+            <img class="loader__gif" src="/public/assets/perroCarga.gif" alt="loader gif">    
+        </div>
+    </div>
+    
+    <div id="navInicio">
+
+    </div>
+
+    <main>
+        <section class="contenedor__logo">
+                <img class="logo__inicioSesion" src="/public/assets/img/logo.png" alt="Logo Help paws">
+        </section>
+        <section class="container_login">
+            <div class="login-container">
+                <h2 class="titulo">Iniciar de Sesión</h2>
+                <form action="/login" method="post" class="formurario__inicioSesion">
+                    <div class="form-group input">
+                        <label class="label__form" for="email">Coreo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu Email" required>
+                    </div>
+                    <div class="form-group input">
+                        <label class="label__form" for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                        <i class='bx bx-show-alt'></i>    
+                    </div>
+                    <div class="form__checkbox">
+                        <input  class="checkbox__checkbox" type="checkbox" id="remember" name="remember">
+                        <label for="remember">Recordar correo y contraseña</label>
+                    </div>
+                    <div class="form__button">
+                        <button class="button__button" type="submit">Iniciar sesión</button>
+                    </div>
+                </form>
+                <p class="form_crearCuenta">¿No tiene una cuenta?  <a href="crearCuenta.html"><strong> Cree una.</strong></a></p>
+            </div>
+        </section>
+    </main>
+
+     
+    <div id="footerInicio">
+
+    </div>
+    <script src="js/codigoCarga.js"></script>
+    <script src="js/verpassword.js"></script>
+</body>
+</html>

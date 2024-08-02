@@ -13,6 +13,8 @@
     --color-primario-claro: #f8f8f8 ;
     --color-texto: #000000;
     --color-texto-inverso: #FFFFFF;
+    --color-texto-inverso-dos: #E95A0C;
+    --color-nav: #e4e3e3  ;
 
     --tipo-texto: 'Barlow Condensed', sans-serif;
 }
@@ -34,6 +36,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    padding-top: 70px;
 }
 
 /* 
@@ -86,4 +89,110 @@ body{
   }
 
 
+/*
+    menu de inico 
+*/
+
+.nav__header{
+  box-shadow: 0 0 6px var(--color-primario);
+  position: fixed;
+  width: 100%;
+  background-color: var(--color-nav);
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* mix-blend-mode: difference ; */
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 980px;
+  margin: 0 auto;
+  align-items: center;
+  font-size: 19px;
+  /* font-weight: 200; */
+  line-height: 30px;
+  color: var(--color-texto);
+  font-family: var(--tipo-texto);
+  
+}
+
+/* menu de inicio  Logo */
+
+.nav__logo{
+  cursor: pointer;
+}
+
+.nav__logo:hover{
+  filter: brightness(130%);
+}
+
+.nav__logo__name{
+  width: 180px;
+  height: 36px;
+}
+  /* Lista de menú de navegación */
+
+.nav__ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: var(--color-primario);
+}
+
+.nav__ul li{
+  padding: 0 15px;
+
+}
+
+.nav__ul ul, ol{
+  list-style: none;
+  min-width: 140px;
+}
+
+.nav__ul li ul{
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  margin-left: -55px;
+  padding: auto;
+}
+
+.nav__li a:hover {
+  cursor: pointer;
+}
+
+.nav__li a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  
+}
+
+
+.nav__ul a.selected::after,
+.nav__ul a:hover::after {
+  opacity: 0.8;
+}
+
+.nav__ul a:hover {
+  color: var(--primary-color);
+}
+
+
+
+/*
+    apartado de footer 
+*/
+
+.footer__Helppaws{
+  text-align: center;
+  
+}
 
